@@ -109,6 +109,9 @@ footer {
 
 /* Адаптивный дизайн */
 @media (max-width: 768px) {
+  .container {
+    max-width: 100%; /* Занимает всю ширину */
+  }
   .social-links {
     flex-direction: column; /* Укладываем ссылки вертикально на маленьких экранах */
     align-items: center; /* Выравниваем ссылки по центру вертикально */
@@ -117,4 +120,4 @@ footer {
   .social-links li {
     margin: 5 px 0; /* Настраиваем вертикальное расстояние */
   }
-}  
+} 
