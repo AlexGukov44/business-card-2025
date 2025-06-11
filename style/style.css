@@ -109,6 +109,9 @@ footer {
 
 /* Адаптивный дизайн */
 @media (max-width: 768px) {
+  body {
+  margin: 0; /* Убирает все поля */
+  }
   .container {
     max-width: 100%; /* Занимает всю ширину */
   }
