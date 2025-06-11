@@ -1,0 +1,120 @@
+body {
+  font-family: sans-serif; /* Выберите подходящий шрифт sans-serif */
+  margin: 0; /* Сброс стандартных полей body */
+  line-height: 1.6; /* Улучшение читаемости */
+}
+
+.container {
+  max-width: 60%; /* Устанавливаем максимальную ширину контейнера */
+  margin: 0 auto; /* Выравниваем контейнер по центру по горизонтали */
+  padding: 20px; /* Добавляем отступы вокруг контента */
+}
+
+header {
+  background-color: black; /* Черный фон для заголовка */
+  color: #d3d3d3; 
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0; /* Удаляем стандартные поля h1 */
+}
+
+/* анимация header */
+
+.wave {
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgb(114, 18, 216));
+    top: 40px;
+}
+.wave span {
+    display: inline-block;
+    font-size: 5vw;
+    animation: wave 2s infinite calc(.1s * var(--i));
+}
+
+.span {
+    color: aliceblue;
+}
+@keyframes wave {
+    0%, 40%,100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}
+
+main {
+  padding: 20px 0; /* Добавляем отступы вокруг основного контента */
+  background-color: #A57859;
+}
+
+.main-info {
+  text-align: center; /* Выравниваем основную информацию по центру */
+  padding-top: 30px;
+}
+
+.main-info h2, .main-info h3 {
+  margin-bottom: 10px; /* Добавляем немного места между заголовками */
+}
+
+.carousel {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Плавная анимация */
+  width: 100%;
+}
+
+.carousel-item {
+  width: 110px;
+  height: auto;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: black; 
+  color: white; 
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+.social-links li {
+  margin: 0 10px; /* Добавляем немного места между ссылками */
+}
+
+.social-links img {
+  width: 32px; 
+  height: 32px;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column; /* Укладываем ссылки вертикально на маленьких экранах */
+    align-items: center; /* Выравниваем ссылки по центру вертикально */
+  }
+
+  .social-links li {
+    margin: 5 px 0; /* Настраиваем вертикальное расстояние */
+  }
+}  
