@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css"/>
     <title>ВИЗИТКА</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
+    <header class="header">
+        <div class="container">
             <div class="wave">
                 <span style="--i:1">п</span>
                 <span style="--i:2">р</span>
@@ -21,33 +22,38 @@
                 <span style="--i:9">и</span>
                 <span style="--i:10">р</span>
                 <span style="--i:11">!</span>
-            </div>
-        </header>
-        <main>
+            </div>     
+        </div>
+    </header>
+    <main>
+        <div class="container">
             <article class="main-info">
                 <h2>ОСНОВЫ:</h2>
                 <h3>HTML</h3>
                 <h3>CSS</h3>
                 <h3>JS</h3>
             </article>
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item"><img src="./cvg/html-icon.svg"></div>
-                    <div class="carousel-item"><img src="./cvg/css-icon.svg"></div>
-                    <div class="carousel-item"><img src="./cvg/js-icon.svg"></div>
-                    <div class="carousel-item"><img src="./cvg/html-icon.svg"></div>   
-                    <div class="carousel-item"><img src="./cvg/css-icon.svg"></div>  
-                    <div class="carousel-item"><img src="./cvg/js-icon.svg"></div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./cvg/html-icon.svg"></div>
+                    <div class="swiper-slide"><img src="./cvg/css-icon.svg"></div>
+                    <div class="swiper-slide"><img src="./cvg/js-icon.svg"></div>
+                    <div class="swiper-slide"><img src="./cvg/html-icon.svg"></div>
+                    <div class="swiper-slide"><img src="./cvg/css-icon.svg"></div>
+                    <div class="swiper-slide"><img src="./cvg/js-icon.svg"></div>
                 </div>
             </div>
-        </main>
-        <footer>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
             <ul class="social-links">
                 <li><a href="https://github.com/AlexGukov44" target="_blank"><img src="./cvg/GitHab.svg" alt="GitHub"></a></li>
                 <li><a href="https://t.me/aleksandrB13" target="_blank"><img src="./cvg/telegram.svg" alt="Telegram"></a></li>
             </ul>
-        </footer>
-    </div>
+        </div>
+    </footer>
+    <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 </html>

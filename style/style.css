@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  max-width: 60%; /* Устанавливаем максимальную ширину контейнера */
+  max-width: 800px; /* Устанавливаем максимальную ширину контейнера */
   margin: 0 auto; /* Выравниваем контейнер по центру по горизонтали */
   padding: 20px; /* Добавляем отступы вокруг контента */
 }
@@ -59,28 +59,33 @@ main {
   margin-bottom: 10px; /* Добавляем немного места между заголовками */
 }
 
-.carousel {
+.swiper {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
+  background: transparent; /* Убирает фон слайдера */
+  margin: 0;
 }
 
-.carousel-inner {
+.swiper-wrapper {
   display: flex;
   transition: transform 0.5s ease-in-out; /* Плавная анимация */
   width: 100%;
 }
 
-.carousel-item {
-  width: 110px;
-  height: auto;
-  margin-right: 10px;
+.swiper-slide {
+  width: 60px; /* Ширина слайда */
+  height: auto; /* Высота автоматически подстраивается */
+  margin-right: 10px; /* Отступ между слайдами */
   text-align: center;
+  background: transparent; /* Убирает фон слайда */
 }
 
-.carousel-item img {
-  max-width: 100%;
-  height: auto;
+.swiper-slide img {
+  max-width: 100%; /* Ограничивает ширину изображения */
+  height: auto; /* Сохраняет пропорции изображения */
+  background: transparent; /* Убирает фон изображения (если применимо) */
+  border-radius: 3px;
 }
 
 footer {
