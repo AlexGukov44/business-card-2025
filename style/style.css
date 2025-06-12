@@ -53,6 +53,7 @@ main {
 .main-info {
   text-align: center; /* Выравниваем основную информацию по центру */
   padding-top: 30px;
+  margin-bottom: 40px;
 }
 
 .main-info h2, .main-info h3 {
