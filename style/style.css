@@ -51,13 +51,12 @@ main {
 }
 
 .main-info {
-  text-align: center; /* Выравниваем основную информацию по центру */
   padding-top: 30px;
   margin-bottom: 40px;
 }
 
-.main-info h2, .main-info h3 {
-  margin-bottom: 10px; /* Добавляем немного места между заголовками */
+pre code {
+  font-size: 25px;
 }
 
 .swiper {
